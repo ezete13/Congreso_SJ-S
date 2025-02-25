@@ -21,41 +21,42 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #f3f9f3; /* Fondo ligeramente verde, moderno y limpio */
+  --background-color: #ffffff; /* Fondo ligeramente verde, moderno y limpio */
   --default-color: #666666; /* Texto principal en gris suave */
-  --heading-color: #006837; /* Verde para títulos, asociado con la naturaleza */
-  --accent-color: #22b573; /* Verde más intenso para botones, enlaces y detalles */
-  --surface-color: #d2fce8; /* Fondo blanco para cajas y elementos destacados */
-  --contrast-color: #e2fcef; /* Texto contrastante, un gris oscuro para legibilidad */
+  --heading-color: #0b8d16; /* Verde para títulos, asociado con la naturaleza */
+  --accent-color: #0b8d16; /* Verde más intenso para botones, enlaces y detalles */
+  --surface-color: #ecffee; /* Fondo blanco para cajas y elementos destacados */
+  --contrast-color: #ecffee; /* Texto contrastante, un gris oscuro para legibilidad */
+  --color-backblack: #60ce69;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #666666; /* El color principal de los enlaces del menú en gris suave */
-  --nav-hover-color: #3a8e4b; /* Verde más intenso al pasar el mouse sobre los enlaces */
-  --nav-mobile-background-color: #ffffff; /* Fondo blanco para el menú de navegación móvil */
-  --nav-dropdown-background-color: #ffffff; /* Fondo blanco para los dropdowns */
-  --nav-dropdown-color: #666666; /* Enlaces del menú desplegable en gris suave */
-  --nav-dropdown-hover-color: #3a8e4b; /* Verde al pasar el mouse sobre los enlaces del menú desplegable */
+  --nav-color: #3d473d; /* El color principal de los enlaces del menú en gris suave */
+  --nav-hover-color: #0b8d16; /* Verde más intenso al pasar el mouse sobre los enlaces */
+  --nav-mobile-background-color: #ecffee; /* Fondo blanco para el menú de navegación móvil */
+  --nav-dropdown-background-color: #ecffee; /* Fondo blanco para los dropdowns */
+  --nav-dropdown-color: #3d473d; /* Enlaces del menú desplegable en gris suave */
+  --nav-dropdown-hover-color: #0b8d16; /* Verde al pasar el mouse sobre los enlaces del menú desplegable */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the same color scheme. */
 
 .light-background {
   --background-color: #f9faf7; /* Fondo muy claro, casi blanco, con un toque de verde */
-  --surface-color: #ffffff; /* Superficies en blanco limpio */
+  --surface-color: #ecffee; /* Superficies en blanco limpio */
 }
 
 .dark-background {
   --background-color: #060606; /* Fondo oscuro */
-  --default-color: #ffffff; /* Texto blanco en fondo oscuro */
-  --heading-color: #ffffff; /* Títulos en blanco */
-  --surface-color: #252525; /* Superficie oscura para elementos */
-  --contrast-color: #ffffff; /* Texto contrastante blanco */
+  --default-color: #ecffee; /* Texto blanco en fondo oscuro */
+  --heading-color: #ecffee; /* Títulos en blanco */
+  --surface-color: #1e201e; /* Superficie oscura para elementos */
+  --contrast-color: #ecffee; /* Texto contrastante blanco */
 }
 
 .accent-background {
-  --background-color: #3a8e4b; /* Verde acentuado para fondos de elementos destacados */
+  --background-color: #51c477; /* Verde acentuado para fondos de elementos destacados */
   --default-color: #ffffff; /* Texto blanco para contraste */
   --heading-color: #ffffff; /* Títulos blancos para destacar */
   --surface-color: #a7d8b8; /* Fondo claro con un toque de verde para secciones */
@@ -312,7 +313,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 13px;
+    font-size: 0.9rem;
     font-family: var(--nav-font);
     font-weight: 500;
     text-transform: uppercase;
@@ -824,20 +825,13 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding: 0;
+  position: relative;
 }
 
 .hero .carousel {
   width: 100%;
   min-height: 70vh;
-  padding: 0;
-  margin: 0;
   position: relative;
-}
-
-@media (max-height: 500px), (max-width: 580px) {
-  .hero .carousel {
-    min-height: 100vh;
-  }
 }
 
 .hero img {
@@ -848,6 +842,20 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+.hero .carousel-container {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 20rem;
+  text-align: left;
 }
 
 .hero .carousel-item {
@@ -861,81 +869,143 @@ section,
   align-items: center;
 }
 
-.hero .container {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0)
-  ); /* Degradado */
-  position: relative;
-  display: flex; /* Centrar contenido */
-  flex-direction: column;
-  justify-content: center; /* Alineación vertical */
-  align-items: flex-start; /* Alineación a la izquierda */
-  padding: 40px 60px; /* Espaciado más cómodo */
-  z-index: 3;
-  width: auto; /* Que el contenedor se ajuste al contenido */
-  max-width: 800px; /* Ancho máximo */
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  .hero .container {
-    position: absolute; /* Contenedor se posiciona sobre la imagen */
-    left: 0; /* Alineación a la izquierda */
-    width: 50%; /* Ocupa la mitad de la imagen */
-    background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro en pantallas grandes */
-    padding: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero .container {
-    position: absolute;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Oscurecer más en pantallas pequeñas */
-    padding: 40px;
-    box-shadow: none;
-  }
-}
-
 .hero h2 {
   margin-bottom: 15px;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: white; /* Letra blanca */
-}
-
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 30px;
-  }
+  color: var(--contrast-color);
 }
 
 .hero p {
   font-size: 20px;
-  color: white; /* Texto claro */
+  color: white;
   margin-bottom: 20px;
 }
 
 .hero .btn-get-started {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
-  display: inline-block;
   padding: 12px 40px;
   transition: 0.3s;
   margin-top: 20px;
   border-radius: 5px;
-  color: var(--contrast-color);
+  color: var(--surface-color);
   background: var(--accent-color);
   text-transform: uppercase;
   border: none;
+  max-width: 20rem;
+  text-align: center;
 }
 
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+/*--------------------------------------------------------------
+Responsive Design - Breakpoints
+--------------------------------------------------------------*/
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .hero h2 {
+    font-size: 24px; /* Reducir el tamaño del título */
+  }
+
+  .hero p {
+    font-size: 14px; /* Reducir el tamaño del texto */
+  }
+
+  .hero .carousel-container {
+    padding: 3rem 3rem; /* Reducir padding */
+  }
+
+  .hero .btn-get-started {
+    font-size: 14px; /* Reducir el tamaño del botón */
+    padding: 8px 20px;
+  }
+
+  .hero .carousel {
+    min-height: 50vh; /* Menos altura para dispositivos móviles */
+  }
+
+  .hero .carousel-control-prev,
+  .hero .carousel-control-next {
+    display: none; /* Quitar las flechas de navegación en móviles */
+  }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero h2 {
+    font-size: 30px; /* Ajustar tamaño de título */
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero .carousel {
+    min-height: 70vh; /* Ajuste de altura para tabletas */
+  }
+
+  .hero .carousel-container {
+    padding: 5rem 7rem;
+  }
+
+  .hero .btn-get-started {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 38px; /* Títulos más grandes */
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .carousel {
+    min-height: 70vh;
+  }
+
+  .hero .carousel-container {
+    padding: 8rem 10rem; /* Aumentar padding en pantallas grandes */
+  }
+
+  .hero .btn-get-started {
+    font-size: 16px;
+    padding: 12px 40px;
+  }
+}
+
+/* Pantallas muy grandes (escritorios grandes) */
+@media (min-width: 1200px) {
+  .hero h2 {
+    font-size: 4.2rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero .carousel {
+    min-height: 80vh; /* Aumentar más la altura en pantallas grandes */
+  }
+
+  .hero .carousel-container {
+    padding: 12rem 18rem;
+  }
+
+  .hero .btn-get-started {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
 }
 
 .hero .carousel-control-prev,
@@ -1068,6 +1138,7 @@ section,
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
+  background: linear-gradient(45deg, #51c477, #f9e000);
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
