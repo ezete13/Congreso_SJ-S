@@ -845,7 +845,7 @@ section,
 }
 
 .hero .carousel-container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0);
   width: 100%;
   height: 100%;
   z-index: 3;
@@ -1000,6 +1000,7 @@ Responsive Design - Breakpoints
 
   .hero .carousel-container {
     padding: 12rem 18rem;
+    
   }
 
   .hero .btn-get-started {
@@ -1138,7 +1139,7 @@ Responsive Design - Breakpoints
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(45deg, #51c477, #f9e000);
+  background: linear-gradient(45deg, #bcffd2, #fffbd4);
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
@@ -1150,13 +1151,16 @@ Responsive Design - Breakpoints
 }
 
 .call-to-action h3 {
-  font-size: 28px;
+  font-size: 3rem;
   font-weight: 700;
-  color: var(--default-color);
+  color: var(--accent-color);
+
+
 }
 
 .call-to-action p {
-  color: var(--default-color);
+  color: #2d532c;
+  font-size: 1.2rem;
 }
 
 .call-to-action .cta-btn {
@@ -1169,8 +1173,11 @@ Responsive Design - Breakpoints
   border-radius: 4px;
   transition: 0.3s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
+  border: 2px solid var(--accent-color);
   color: var(--contrast-color);
+  background-color: var(--accent-color);
+  font-weight: 800;
+  
 }
 
 .call-to-action .cta-btn:hover {
@@ -2063,3 +2070,200 @@ Responsive Design - Breakpoints
 .starter-section {
   /* Add your styles here */
 }
+
+
+/*//////////////////////////////////TIME LINE*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #006E51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container-timeline {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container-timeline.left {
+  left: 0;
+}
+
+.container-timeline.right {
+  left: 50%;
+}
+
+.container-timeline::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container-timeline.right::after {
+  left: -8px;
+}
+
+.container-timeline::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.container-timeline.right::before {
+  left: 8px;
+}
+
+.container-timeline .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--default-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container-timeline.left .date {
+  right: -75px;
+}
+
+.container-timeline.right .date {
+  left: -75px;
+}
+
+.container-timeline .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--accent-color);
+  z-index: 1;
+}
+
+.container-timeline.left .icon {
+  right: 56px;
+}
+
+.container-timeline.right .icon {
+  left: 56px;
+}
+
+.container-timeline .content-timeline {
+  padding: 30px 90px 30px 30px;
+  background: var(--contrast-color);
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.container-timeline.right .content-timeline {
+  padding: 30px 30px 30px 90px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.container-timeline .content-timeline h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+}
+
+.container-timeline .content-timeline p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container-timeline {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container-timeline.right {
+    left: 0%;
+  }
+
+  .container-timeline.left::after, 
+  .container-timeline.right::after {
+    left: 82px;
+  }
+
+  .container-timeline.left::before,
+  .container-timeline.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container-timeline.left .date,
+  .container-timeline.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container-timeline.left .icon,
+  .container-timeline.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container-timeline.left .content-timeline,
+  .container-timeline.right .content-timeline {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+
+
+/*//////////////////////////////////TIME LINE*/
