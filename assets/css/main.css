@@ -1,15 +1,4 @@
-/**
-* Template Name: Medicio
-* Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto", serif;
@@ -30,6 +19,7 @@
   --contrast-color: #ffffff; /* Texto contrastante, un gris oscuro para legibilidad */
   --herolayer-color: rgba(7, 24, 18, 0.8); /*Capa por encima del hero*/
   --accent2-color: #c7db7c; /*Complementos Hero*/
+  --light-color: #aee4cd;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -795,15 +785,15 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 5rem;
   position: relative;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
   position: relative;
 }
 
@@ -915,128 +905,6 @@ section,
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
-/*--------------------------------------------------------------
-Responsive Design - Breakpoints
---------------------------------------------------------------*/
-
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 576px) {
-  .hero h2 {
-    font-size: 24px; /* Reducir el tamaño del título */
-  }
-
-  .carousel-container h4 {
-    font-size: 1rem;
-  }
-
-  .hero p {
-    font-size: 14px; /* Reducir el tamaño del texto */
-  }
-
-  .hero .carousel-container {
-    padding: 3rem 3rem; /* Reducir padding */
-  }
-
-  .hero .btn-get-started {
-    font-size: 14px; /* Reducir el tamaño del botón */
-    padding: 8px 20px;
-  }
-
-  .hero .carousel {
-    min-height: 50vh; /* Menos altura para dispositivos móviles */
-  }
-
-  .hero .carousel-control-prev,
-  .hero .carousel-control-next {
-    display: none; /* Quitar las flechas de navegación en móviles */
-  }
-}
-
-/* Pantallas medianas (tabletas) */
-@media (min-width: 576px) and (max-width: 768px) {
-  .hero h2 {
-    font-size: 30px; /* Ajustar tamaño de título */
-  }
-  .carousel-container h4 {
-    font-size: 1rem;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .hero .carousel {
-    min-height: 70vh; /* Ajuste de altura para tabletas */
-  }
-
-  .hero .carousel-container {
-    padding: 5rem 7rem;
-  }
-
-  .hero .btn-get-started {
-    font-size: 15px;
-    padding: 10px 30px;
-  }
-}
-
-/* Pantallas grandes (escritorios) */
-@media (min-width: 768px) {
-  .hero h2 {
-    font-size: 38px; /* Títulos más grandes */
-    max-width: 40rem;
-  }
-
-  .carousel-container h4 {
-    font-size: 1rem;
-  }
-
-  .hero p {
-    font-size: 20px;
-    max-width: 40rem;
-  }
-
-  .hero .carousel {
-    min-height: 70vh;
-  }
-
-  .hero .carousel-container {
-    padding: 8rem 10rem; /* Aumentar padding en pantallas grandes */
-  }
-
-  .hero .btn-get-started {
-    font-size: 16px;
-    padding: 12px 40px;
-  }
-}
-
-/* Pantallas muy grandes (escritorios grandes) */
-@media (min-width: 1200px) {
-  .hero h2 {
-    font-size: 3.5rem;
-    max-width: 50rem;
-  }
-  .carousel-container h4 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1.3rem;
-    max-width: 50rem;
-  }
-
-  .hero .carousel {
-    min-height: 75vh;
-  }
-
-  .hero .carousel-container {
-    padding: 12rem 18rem;
-  }
-
-  .hero .btn-get-started {
-    font-size: 1.2rem;
-    padding: 1rem 1.5rem;
-  }
-}
 
 .hero .carousel-control-prev,
 .hero .carousel-control-next {
@@ -1168,10 +1036,10 @@ Responsive Design - Breakpoints
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(45deg, #97ffb9, #fff7ac);
+  /*background: linear-gradient(45deg, var(--heading-color), var(--accent2-color));*/
+  /*background: var(--heading-color) !important;*/
   padding: 80px 0;
   position: relative;
-  /*clip-path: inset(0);*/
 }
 
 .call-to-action .container {
@@ -1180,19 +1048,21 @@ Responsive Design - Breakpoints
 }
 
 .call-to-action h3 {
+  font-family: var(--default-font);
   font-size: 3rem;
   font-weight: 700;
-  color: var(--surface-color);
+  color: var(--nav-color);
+  
 }
 
 .call-to-action p {
-  color: #2d532c;
+  color: var(--contrast-color);
   font-size: 1.2rem;
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--heading-font);
-  font-weight: 500;
+  font-family: var(--default-font);
+  font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -1203,7 +1073,6 @@ Responsive Design - Breakpoints
   border: 2px solid var(--surface-color);
   color: var(--accent-color);
   background-color: var(--surface-color);
-  font-weight: 800;
 }
 
 .call-to-action .cta-btn:hover {
@@ -1223,7 +1092,13 @@ Responsive Design - Breakpoints
 .about .content ul {
   list-style: none;
   padding: 0;
+  font-size: 1.2rem;
 }
+
+.about .content p {
+  font-size: 1.2rem;
+}
+
 
 .about .content ul li {
   padding: 10px 0 0 0;
@@ -2185,11 +2060,11 @@ Responsive Design - Breakpoints
 }
 
 .container-timeline.left .date {
-  right: -75px;
+  right: -10rem;
 }
 
 .container-timeline.right .date {
-  left: -75px;
+  left: -10rem;
 }
 
 .container-timeline .icon {
@@ -2218,7 +2093,7 @@ Responsive Design - Breakpoints
 
 .container-timeline .content-timeline {
   padding: 30px 90px 30px 30px;
-  background: var(--contrast-color);
+  background: var(--light-color);
   position: relative;
   border-radius: 10px 10px 10px 10px;
 }
@@ -2230,16 +2105,16 @@ Responsive Design - Breakpoints
 
 .container-timeline .content-timeline h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: normal;
-  color: #006e51;
+  color: var(--heading-color);
 }
 
 .container-timeline .content-timeline p {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: var(--heading-color);
 }
 
 @media (max-width: 767.98px) {
@@ -2283,7 +2158,7 @@ Responsive Design - Breakpoints
   .container-timeline.left .content-timeline,
   .container-timeline.right .content-timeline {
     padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+    border-radius: 10px 10px 10px 10px;
   }
 }
 

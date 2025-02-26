@@ -16,20 +16,6 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
@@ -61,6 +47,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/breakpoint.css" rel="stylesheet" />
   </head>
 
   <body class="index-page">
@@ -91,56 +78,10 @@
           <nav id="navmenu" class="navmenu">
             <ul>
               <li><a href="#hero" class="active">Presentación</a></li>
-              <li class="dropdown">
-                <a href="#"
-                  ><span>Organización</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a href="direccion.html">Dirección</a></li>
-                  <li><a href="#">Comité científico</a></li>
-                  <li><a href="#">Comité organizador</a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown">
-                <a href="#"
-                  ><span>Programa</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a href="#">Temáticas</a></li>
-                  <li><a href="#">Programa científico</a></li>
-                  <li><a href="calendario.html">Calendario</a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown">
-                <a href="#"
-                  ><span>Participación</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a href="#">Inscripción de ponencias</a></li>
-                  <li><a href="#">Inscripción de asistencia</a></li>
-                  <li><a href="#">Descarga de certificados</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#contact">Contacto</a></li>
-
-              <li class="dropdown">
-                <a href="#"
-                  ><span> + Mas</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i
-                ></a>
-                <ul>
-                  <li><a href="#">Preguntas Frecuentes</a></li>
-                  <li><a href="#">Edición Anterior</a></li>
-                  <li><a href="#">Aviso Legal</a></li>
-                  <li><a href="#">Condiciones de uso</a></li>
-                </ul>
-              </li>
+              <li><a href="#programa">Programa</a></li>
+              <li><a href="#organizacion">Organización</a></li>
+              <li><a href="#participacion">Participación</a></li>
+              <li><a href="#contacto">Contacto</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
@@ -249,39 +190,8 @@
       </section>
       <!-- /Hero Section -->
 
-      <!-- Call To Action Section -->
-      <section
-        id="call-to-action"
-        class="call-to-action section accent-background"
-      >
-        <div class="container">
-          <div
-            class="row justify-content-center"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="col-xl-10">
-              <div class="text-center">
-                <h3>¡SAN JUAN SOSTENIBLE TE ESPERA!</h3>
-                <p class="text-uppercase">
-                  Únete al Congreso <strong>SJ+S</strong> y sé parte del cambio
-                  hacia un futuro más sostenible. <br /><strong
-                    >Desde el 15 al 17 de Octubre de 2025 no te pierdas el
-                    congreso SJ+S</strong
-                  >
-                </p>
-                <a class="cta-btn text-uppercase" href="#register"
-                  >Inscríbete Ahora</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Call To Action Section -->
-
       <!-- About Section -->
-      <section id="about" class="about section">
+      <section id="hero" class="about section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Sobre el congreso<br /></h2>
@@ -385,263 +295,13 @@
       </section>
       <!-- /About Section -->
 
-      <!-- Stats Section -->
-      <section id="stats" class="stats section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Temáticas<br /></h2>
-        </div>
-        <!-- End Section Title -->
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="fas fa-user-md flex-shrink-0"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="25"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Doctors</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="far fa-hospital flex-shrink-0"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="15"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Departments</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="fas fa-flask flex-shrink-0"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="8"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Research Labs</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item d-flex align-items-center w-100 h-100">
-                <i class="fas fa-award flex-shrink-0"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="150"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Awards</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Stats Section -->
-
-      <!-- Features Section -->
-      <section id="features" class="features section">
-        <div class="container">
-          <div class="row justify-content-around gy-4">
-            <div
-              class="features-image col-lg-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <img src="assets/img/features.jpg" alt="" />
-            </div>
-
-            <div
-              class="col-lg-5 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-              <p>
-                Esse voluptas cumque vel exercitationem. Reiciendis est hic
-                accusamus. Non ipsam et sed minima temporibus laudantium. Soluta
-                voluptate sed facere corporis dolores excepturi
-              </p>
-
-              <div
-                class="icon-box d-flex position-relative"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="fa-solid fa-hand-holding-medical flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                  <p>
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi sint occaecati cupiditate non provident
-                  </p>
-                </div>
-              </div>
-              <!-- End Icon Box -->
-
-              <div
-                class="icon-box d-flex position-relative"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                  <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                  </p>
-                </div>
-              </div>
-              <!-- End Icon Box -->
-
-              <div
-                class="icon-box d-flex position-relative"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                  <p>
-                    Explicabo est voluptatum asperiores consequatur magnam. Et
-                    veritatis odit. Sunt aut deserunt minus aut eligendi omnis
-                  </p>
-                </div>
-              </div>
-              <!-- End Icon Box -->
-
-              <div
-                class="icon-box d-flex position-relative"
-                data-aos="fade-up"
-                data-aos-delay="600"
-              >
-                <i class="fa-solid fa-lungs flex-shrink-0"></i>
-                <div>
-                  <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                  <p>
-                    Est voluptatem labore deleniti quis a delectus et. Saepe
-                    dolorem libero sit non aspernatur odit amet. Et eligendi
-                  </p>
-                </div>
-              </div>
-              <!-- End Icon Box -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Features Section -->
-      <!-- /Calendario Section -->
-      <section id="about" class="about section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Calendario<br /></h2>
-          <p>A continuación se puede ver el contenido del congreso</p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="timeline">
-          <div class="container-timeline left" data-aos="fade-up">
-            <div class="date">15 Dec</div>
-            <i class="icon fa fa-home"></i>
-            <div class="content-timeline">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-          <div class="container-timeline right" data-aos="fade-up">
-            <div class="date">22 Oct</div>
-            <i class="icon fa fa-gift"></i>
-            <div class="content-timeline">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-          <div class="container-timeline left" data-aos="fade-up">
-            <div class="date">10 Jul</div>
-            <i class="icon fa fa-user"></i>
-            <div class="content-timeline">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-          <div class="container-timeline right" data-aos="fade-up">
-            <div class="date">18 May</div>
-            <i class="icon fa fa-running"></i>
-            <div class="content-timeline">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-          <div class="container-timeline left" data-aos="fade-up">
-            <div class="date">10 Feb</div>
-            <i class="icon fa fa-cog"></i>
-            <div class="content-timeline">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-          <div class="container-timeline right" data-aos="fade-up">
-            <div class="date">01 Jan</div>
-            <i class="icon fa fa-certificate"></i>
-            <div class="content-timeline">
-              <h2>Lorem ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Calendario Section -->
-
       <!-- Services Section -->
-      <section id="services" class="services section">
+      <section id="programa" class="services section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Services</h2>
+          <h2>Tematicas</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            Aqui estan las tematicas
           </p>
         </div>
         <!-- End Section Title -->
@@ -658,7 +318,7 @@
                   <i class="fas fa-heartbeat"></i>
                 </div>
                 <a href="#" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
+                  <h3> Innovación educativa para el desarrollo sostenible</h3>
                 </a>
                 <p>
                   Provident nihil minus qui consequatur non omnis maiores. Eos
@@ -679,7 +339,7 @@
                   <i class="fas fa-pills"></i>
                 </div>
                 <a href="#" class="stretched-link">
-                  <h3>Eosle Commodi</h3>
+                  <h3>Formación inicial del profesorado para el desarrollo sostenible</h3>
                 </a>
                 <p>
                   Ut autem aut autem non a. Sint sint sit facilis nam iusto
@@ -699,7 +359,7 @@
                   <i class="fas fa-hospital-user"></i>
                 </div>
                 <a href="#" class="stretched-link">
-                  <h3>Ledo Markt</h3>
+                  <h3>Formación del profesorado con enfoque de género</h3>
                 </a>
                 <p>
                   Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
@@ -719,7 +379,7 @@
                   <i class="fas fa-dna"></i>
                 </div>
                 <a href="#" class="stretched-link">
-                  <h3>Asperiores Commodit</h3>
+                  <h3>Desarrollo profesional/formación permanente para la sostenibilidad</h3>
                 </a>
                 <p>
                   Non et temporibus minus omnis sed dolor esse consequatur.
@@ -740,7 +400,7 @@
                   <i class="fas fa-wheelchair"></i>
                 </div>
                 <a href="#" class="stretched-link">
-                  <h3>Velit Doloremque</h3>
+                  <h3>Liderazgo y gestión educativa para la sostenibilidad</h3>
                 </a>
                 <p>
                   Cumque et suscipit saepe. Est maiores autem enim facilis ut
@@ -761,7 +421,7 @@
                   <i class="fas fa-notes-medical"></i>
                 </div>
                 <a href="#" class="stretched-link">
-                  <h3>Dolori Architecto</h3>
+                  <h3>Competencias claves/transversales para el desarrollo sostenible</h3>
                 </a>
                 <p>
                   Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
@@ -775,6 +435,198 @@
         </div>
       </section>
       <!-- /Services Section -->
+
+      <!-- Features Section -->
+      <section id="features" class="features section">
+        <div class="container">
+          <div class="row justify-content-around gy-4">
+            
+
+            <div
+              class="col-lg-5 d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+            <h3>Razones para la elección de las temáticas del Congreso</h3>
+            <p>
+              El Congreso de Innovación y Tecnología se centra en temas clave que están revolucionando las industrias actuales. Las siguientes temáticas fueron seleccionadas debido a su relevancia y su impacto directo en el futuro de la tecnología y la sociedad.
+            </p>
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i class="fa-solid fa-hand-holding-medical flex-shrink-0"></i>
+                <div>
+                  <h4><a href="" class="stretched-link">Innovación en Inteligencia Artificial</a></h4>
+                  <p>
+                    La inteligencia artificial está transformando todos los sectores. Este tema fue elegido para explorar cómo la IA está optimizando procesos en áreas clave como la salud, la educación y la industria.
+                  </p>
+                </div>
+              </div>
+              <!-- End Icon Box -->
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
+                <div>
+                  <h4><a href="" class="stretched-link">Salud Digital y Medicina Personalizada</a></h4>
+      <p>
+        Este tema fue seleccionado para abordar los avances en la medicina digital, que permiten tratamientos más personalizados y eficaces, mejorando la calidad de vida de los pacientes.
+      </p>
+                </div>
+              </div>
+              <!-- End Icon Box -->
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
+                <div>
+                  <h4><a href="" class="stretched-link">Ciberseguridad en la Era Digital</a></h4>
+      <p>
+        En un mundo cada vez más digitalizado, la protección de datos y la ciberseguridad son más importantes que nunca. Este tema se eligió para discutir estrategias de protección frente a amenazas cibernéticas.
+      </p>
+                </div>
+              </div>
+              <!-- End Icon Box -->
+
+              <div
+                class="icon-box d-flex position-relative"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <i class="fa-solid fa-lungs flex-shrink-0"></i>
+                <div>
+                  <h4><a href="" class="stretched-link">Tecnología y Sostenibilidad Ambiental</a></h4>
+      <p>
+        El futuro de la tecnología también debe estar alineado con la sostenibilidad. Este tema fue elegido para explorar cómo las tecnologías emergentes pueden ayudar a mitigar el cambio climático y promover un futuro más verde.
+      </p>
+                </div>
+              </div>
+
+              <!-- End Icon Box -->
+              
+            </div>
+            <div
+              class="features-image col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="assets/img/features.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Features Section -->
+
+      <!-- /Calendario Section -->
+      <section id="organizacion" class="section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Organización<br /></h2>
+          <p>En esta sección se muestra el personal que forma parte del desarrollo de este congreso y la agenda del mismo</p>
+        </div>
+        <!-- End Section Title -->
+         <div class="container">
+         </div>
+        
+         <div class="timeline">
+          <!-- Día 1 - Inicio del Congreso -->
+          <div class="container-timeline left" data-aos="fade-up">
+            <div class="date">9:00 AM</div>
+            <i class="icon fa fa-home"></i>
+            <div class="content-timeline">
+              <h2>Apertura del Congreso</h2>
+              <p>
+                Comienzo del Congreso de Innovación Tecnológica. Palabras de bienvenida y presentación de los objetivos del evento.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Día 1 - Conferencia 1 -->
+          <div class="container-timeline right" data-aos="fade-up">
+            <div class="date">10:00 AM</div>
+            <i class="icon fa fa-laptop"></i>
+            <div class="content-timeline">
+              <h2>Innovación en Inteligencia Artificial</h2>
+              <p>
+                Conferencia principal sobre cómo la inteligencia artificial está transformando las industrias y su potencial en el futuro.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Día 1 - Sesión de Networking -->
+          <div class="container-timeline left" data-aos="fade-up">
+            <div class="date">12:00 PM</div>
+            <i class="icon fa fa-users"></i>
+            <div class="content-timeline">
+              <h2>Sesión de Networking</h2>
+              <p>
+                Espacio para que los participantes interactúen entre sí y con los ponentes, compartiendo ideas y experiencias.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Día 2 - Talleres -->
+          <div class="container-timeline right" data-aos="fade-up">
+            <div class="date">9:00 AM</div>
+            <i class="icon fa fa-cogs"></i>
+            <div class="content-timeline">
+              <h2>Talleres Prácticos sobre Tecnología y Transformación Digital</h2>
+              <p>
+                Talleres prácticos sobre las últimas herramientas tecnológicas y cómo implementarlas en los negocios.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Día 2 - Panel de Expertos -->
+          <div class="container-timeline left" data-aos="fade-up">
+            <div class="date">2:00 PM</div>
+            <i class="icon fa fa-users"></i>
+            <div class="content-timeline">
+              <h2>Panel de Expertos: El Futuro del Trabajo en la Era Digital</h2>
+              <p>
+                Un panel de expertos en transformación digital discute el futuro del trabajo, el impacto de la automatización y el teletrabajo.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Día 3 - Presentación de Proyectos -->
+          <div class="container-timeline right" data-aos="fade-up">
+            <div class="date">10:00 AM</div>
+            <i class="icon fa fa-briefcase"></i>
+            <div class="content-timeline">
+              <h2>Presentación de Proyectos Innovadores</h2>
+              <p>
+                Los participantes tendrán la oportunidad de presentar sus proyectos innovadores relacionados con la tecnología y la sostenibilidad.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Día 3 - Clausura del Congreso -->
+          <div class="container-timeline left" data-aos="fade-up">
+            <div class="date">4:00 PM</div>
+            <i class="icon fa fa-gavel"></i>
+            <div class="content-timeline">
+              <h2>Clausura y Despedida</h2>
+              <p>
+                Cierre oficial del Congreso, agradecimientos a los participantes y organización de la próxima edición del evento.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- /Calendario Section -->
+
+      
 
       <!-- Doctors Section -->
       <section id="doctors" class="doctors section light-background">

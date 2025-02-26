@@ -1,0 +1,146 @@
+/*--------------------------------------------------------------
+Responsive Design - Breakpoints
+--------------------------------------------------------------*/
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .hero h2 {
+      font-size: 24px; /* Reducir el tamaño del título */
+    }
+  
+    .carousel-container h4 {
+      font-size: 1rem;
+    }
+  
+    .hero p {
+      font-size: 14px; /* Reducir el tamaño del texto */
+    }
+  
+    .hero .carousel-container {
+      padding: 3rem 3rem; /* Reducir padding */
+    }
+  
+    .hero .btn-get-started {
+      font-size: 14px; /* Reducir el tamaño del botón */
+      padding: 8px 20px;
+    }
+  
+    .hero .carousel {
+      min-height: 50vh; /* Menos altura para dispositivos móviles */
+    }
+  
+    .hero .carousel-control-prev,
+    .hero .carousel-control-next {
+      display: none; /* Quitar las flechas de navegación en móviles */
+    }
+    
+    .about .content ul {
+        list-style: none;
+        padding: 0;
+        font-size: .9rem;
+      }
+      
+      .about .content p {
+        font-size: .9rem;
+      }
+    .about .content {
+        padding: 0 2.3rem;
+    }
+  }
+  
+  /* Pantallas medianas (tabletas) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .hero h2 {
+      font-size: 30px; /* Ajustar tamaño de título */
+    }
+    .carousel-container h4 {
+      font-size: 1rem;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .hero .carousel {
+      min-height: 70vh; /* Ajuste de altura para tabletas */
+    }
+  
+    .hero .carousel-container {
+      padding: 5rem 7rem;
+    }
+  
+    .hero .btn-get-started {
+      font-size: 15px;
+      padding: 10px 30px;
+    }
+
+    .about .content ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1rem;
+      }
+      
+      .about .content p {
+        font-size: 1rem;
+      }
+  }
+  
+  /* Pantallas grandes (escritorios) */
+  @media (min-width: 768px) {
+    .hero h2 {
+      font-size: 38px; /* Títulos más grandes */
+      max-width: 40rem;
+    }
+  
+    .carousel-container h4 {
+      font-size: 1rem;
+    }
+  
+    .hero p {
+      font-size: 20px;
+      max-width: 40rem;
+    }
+  
+    .hero .carousel {
+      min-height: 70vh;
+    }
+  
+    .hero .carousel-container {
+      padding: 8rem 10rem; /* Aumentar padding en pantallas grandes */
+    }
+  
+    .hero .btn-get-started {
+      font-size: 16px;
+      padding: 12px 40px;
+    }
+  }
+  
+  /* Pantallas muy grandes (escritorios grandes) */
+  @media (min-width: 1200px) {
+    .hero h2 {
+      font-size: 3.5rem;
+      max-width: 50rem;
+    }
+    .carousel-container h4 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 50rem;
+    }
+  
+    .hero .carousel {
+      min-height: 75vh;
+    }
+  
+    .hero .carousel-container {
+      padding: 12rem 18rem;
+    }
+  
+    .hero .btn-get-started {
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+  
