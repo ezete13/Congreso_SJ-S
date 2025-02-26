@@ -1,4 +1,3 @@
-
 /* Fonts */
 :root {
   --default-font: "Roboto", serif;
@@ -793,8 +792,8 @@ section,
 .section-title h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: .5rem;
-  padding-bottom: .5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   position: relative;
 }
 
@@ -905,7 +904,6 @@ section,
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
-
 
 .hero .carousel-control-prev,
 .hero .carousel-control-next {
@@ -1053,7 +1051,6 @@ section,
   font-size: 3rem;
   font-weight: 700;
   color: var(--nav-color);
-  
 }
 
 .call-to-action p {
@@ -1099,7 +1096,6 @@ section,
 .about .content p {
   font-size: 1.2rem;
 }
-
 
 .about .content ul li {
   padding: 10px 0 0 0;
@@ -1818,13 +1814,13 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background-color: var(--surface-color);
+  background-color: var(--light-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 24px 0 30px 0;
 }
 
 .contact .info-item i {
-  color: var(--accent-color);
+  color: var(--heading-color);
   width: 56px;
   height: 56px;
   font-size: 24px;
@@ -1838,7 +1834,7 @@ section,
 
 .contact .info-item h3 {
   font-size: 20px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--heading-color), transparent 0%);
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
@@ -1851,7 +1847,7 @@ section,
 }
 
 .contact .php-email-form {
-  background-color: var(--surface-color);
+  background-color: var(--light-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 30px;
@@ -1870,9 +1866,9 @@ section,
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  color: var(--heading-color);
+  background-color: var(--light-color);
+  border-color: color-mix(in srgb, var(--default-color), transparent 0%);
 }
 
 .contact .php-email-form input[type="text"]:focus,
@@ -1884,7 +1880,7 @@ section,
 .contact .php-email-form input[type="text"]::placeholder,
 .contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--heading-color), transparent 70%);
 }
 
 .contact .php-email-form button[type="submit"] {
